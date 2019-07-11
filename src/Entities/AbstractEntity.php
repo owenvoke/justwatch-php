@@ -5,17 +5,17 @@ declare(strict_types=1);
 namespace pxgamer\JustWatch\Entities;
 
 use DateTime;
+use stdClass;
 use DateTimeZone;
 use ReflectionClass;
 use ReflectionProperty;
-use stdClass;
 
 abstract class AbstractEntity
 {
     /** @param stdClass|array|null $parameters */
     public function __construct($parameters = null)
     {
-        if (!$parameters) {
+        if (! $parameters) {
             return;
         }
 

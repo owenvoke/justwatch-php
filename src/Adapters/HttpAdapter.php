@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace pxgamer\JustWatch\Adapters;
 
-use function sprintf;
-use GuzzleHttp\Client;
 use function is_array;
+use GuzzleHttp\Client;
 use function json_decode;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\ClientInterface;
@@ -39,7 +38,7 @@ final class HttpAdapter
             $this->handleError();
         }
 
-        return (string)$this->response->getBody();
+        return (string) $this->response->getBody();
     }
 
     /**
@@ -55,7 +54,7 @@ final class HttpAdapter
             $this->handleError();
         }
 
-        return (string)$this->response->getBody();
+        return (string) $this->response->getBody();
     }
 
     /**
@@ -77,7 +76,7 @@ final class HttpAdapter
             $this->handleError();
         }
 
-        return (string)$this->response->getBody();
+        return (string) $this->response->getBody();
     }
 
     /**
@@ -99,7 +98,7 @@ final class HttpAdapter
             $this->handleError();
         }
 
-        return (string)$this->response->getBody();
+        return (string) $this->response->getBody();
     }
 
     public function getLatestResponseHeaders(): ?array
@@ -109,17 +108,17 @@ final class HttpAdapter
         }
 
         return [
-            'reset' => (int)(string)$this->response->getHeader('RateLimit-Reset'),
-            'remaining' => (int)(string)$this->response->getHeader('RateLimit-Remaining'),
-            'limit' => (int)(string)$this->response->getHeader('RateLimit-Limit'),
+            'reset' => (int) (string) $this->response->getHeader('RateLimit-Reset'),
+            'remaining' => (int) (string) $this->response->getHeader('RateLimit-Remaining'),
+            'limit' => (int) (string) $this->response->getHeader('RateLimit-Limit'),
         ];
     }
 
     /** @throws HttpException */
     protected function handleError(): void
     {
-        $body = (string)$this->response->getBody();
-        $code = (int)$this->response->getStatusCode();
+        $body = (string) $this->response->getBody();
+        $code = (int) $this->response->getStatusCode();
 
         $content = json_decode($body);
 
