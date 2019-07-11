@@ -51,13 +51,13 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-version]: https://img.shields.io/packagist/v/pxgamer/justwatch.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/pxgamer/justwatch-php/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/:styleci/shield
+[ico-styleci]: https://styleci.io/repos/196361467/shield
 [ico-code-quality]: https://img.shields.io/codecov/c/github/pxgamer/justwatch-php.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/pxgamer/justwatch.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/pxgamer/justwatch
 [link-travis]: https://travis-ci.com/pxgamer/justwatch-php
-[link-styleci]: https://styleci.io/repos/:styleci
+[link-styleci]: https://styleci.io/repos/196361467
 [link-code-quality]: https://codecov.io/gh/pxgamer/justwatch-php
 [link-downloads]: https://packagist.org/packages/pxgamer/justwatch
 [link-author]: https://github.com/pxgamer
