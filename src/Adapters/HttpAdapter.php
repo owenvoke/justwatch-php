@@ -120,7 +120,7 @@ final class HttpAdapter
         $body = (string) $this->response->getBody();
         $code = (int) $this->response->getStatusCode();
 
-        $content = json_decode($body);
+        $content = json_decode($body, false);
 
         throw new HttpException($content->message ?? 'Request not processed.', $code);
     }
