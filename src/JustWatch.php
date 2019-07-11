@@ -11,8 +11,12 @@ final class JustWatch
     /** @var HttpAdapter */
     protected $adapter;
 
-    public function __construct(HttpAdapter $adapter)
+    /** @var string */
+    protected $locale;
+
+    public function __construct(HttpAdapter $adapter, ?string $locale = null)
     {
         $this->adapter = $adapter;
+        $this->locale = $locale ?? 'en_US';
     }
 }
