@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace pxgamer\JustWatch;
 
+use pxgamer\JustWatch\Apis\Providers;
 use pxgamer\JustWatch\Adapters\HttpAdapter;
 
 final class JustWatch
@@ -18,5 +19,10 @@ final class JustWatch
     {
         $this->adapter = $adapter;
         $this->locale = $locale ?? 'en_US';
+    }
+
+    public function providers(): Providers
+    {
+        return new Providers($this->adapter, $this->locale);
     }
 }
