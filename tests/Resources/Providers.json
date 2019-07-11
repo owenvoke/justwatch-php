@@ -1,0 +1,93 @@
+[
+    {
+        "id": 8,
+        "profile_id": 13,
+        "technical_name": "netflix",
+        "short_name": "nfx",
+        "clear_name": "Netflix",
+        "has_global_account": false,
+        "can_create_title": false,
+        "data": {
+            "public_info": false,
+            "deeplink_data": [
+                {
+                    "extras": {
+                        "S.source": "30"
+                    },
+                    "scheme": "https",
+                    "packages": [
+                        "com.netflix.ninja",
+                        "com.netflix.mediaclient"
+                    ],
+                    "platforms": [
+                        "fire_tv",
+                        "android_tv"
+                    ],
+                    "path_template": "www.netflix.com/watch/%DEEPLINK%"
+                }
+            ]
+        },
+        "profile_data": {
+            "store_id_ios": 363590051,
+            "store_id_android": "com.netflix.mediaclient"
+        },
+        "priority": 10,
+        "display_priority": 1,
+        "domains": [],
+        "monetization_types": [
+            "flatrate"
+        ],
+        "icon_url": "/icon/430997/{profile}",
+        "slug": "netflix"
+    },
+    {
+        "id": 9,
+        "profile_id": 7,
+        "technical_name": "amazonprime",
+        "short_name": "amp",
+        "clear_name": "Amazon Prime Video",
+        "has_global_account": false,
+        "can_create_title": false,
+        "data": {
+            "public_info": false,
+            "deeplink_data": [
+                {
+                    "extras": {},
+                    "scheme": "https",
+                    "packages": [
+                        "com.amazon.avod"
+                    ],
+                    "platforms": [
+                        "fire_tv"
+                    ],
+                    "path_template": "watch.amazon.de/watch?asin=%DEEPLINK%\u0026contentType=MOVIE\u0026territory=DE\u0026ref_=atv_dp_pb_core"
+                },
+                {
+                    "extras": {
+                        "S.com.amazon.ignition.DeepLinkIntent.DEEP_LINK": "%DEEPLINK%"
+                    },
+                    "scheme": "",
+                    "packages": [
+                        "com.amazon.amazonvideo.livingroom"
+                    ],
+                    "component": "com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity",
+                    "platforms": [
+                        "android_tv"
+                    ]
+                }
+            ]
+        },
+        "profile_data": {
+            "store_id_ios": 545519333,
+            "store_id_android": ""
+        },
+        "priority": 4,
+        "display_priority": 2,
+        "domains": [],
+        "monetization_types": [
+            "flatrate"
+        ],
+        "icon_url": "/icon/52449539/{profile}",
+        "slug": "amazon-prime-video"
+    }
+]
