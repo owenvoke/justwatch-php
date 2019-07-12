@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "translation": "Action \u0026 Adventure",
+        "short_name": "act",
+        "technical_name": "action",
+        "slug": "action-and-adventure"
+    },
+    {
+        "id": 2,
+        "translation": "Animation",
+        "short_name": "ani",
+        "technical_name": "animation",
+        "slug": "animation"
+    }
+]

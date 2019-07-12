@@ -9,7 +9,7 @@ use pxgamer\JustWatch\Entities\Provider as ProviderEntity;
 final class Providers extends AbstractApi
 {
     /**
-     * @return ProviderEntity[]
+     * @return array<ProviderEntity>
      */
     public function getAll(): array
     {
