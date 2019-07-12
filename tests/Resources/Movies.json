@@ -1,0 +1,95 @@
+{
+    "id": 1,
+    "title": "Star Wars",
+    "full_path": "/us/movie/star-wars-episode-iv-a-new-hope",
+    "full_paths": {
+        "MOVIE_DETAIL_OVERVIEW": "/us/movie/star-wars-episode-iv-a-new-hope"
+    },
+    "poster": "/poster/8539293/{profile}",
+    "backdrops": [
+        {
+            "backdrop_url": "/backdrop/8539292/{profile}"
+        }
+    ],
+    "short_description": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+    "original_release_year": 1977,
+    "tmdb_popularity": 36.387,
+    "object_type": "movie",
+    "original_title": "Star Wars",
+    "offers": [
+        {
+            "monetization_type": "buy",
+            "provider_id": 18,
+            "retail_price": 19.99,
+            "currency": "USD",
+            "urls": {
+                "standard_web": "https://store.playstation.com/#!/en-us/cid=UV0010-NPVB08438_CN-0000000000270544"
+            },
+            "presentation_type": "hd",
+            "date_provider_id": "2015-06-04_18",
+            "date_created": "2015-06-04"
+        }
+    ],
+    "clips": [
+        {
+            "type": "trailer",
+            "provider": "youtube",
+            "external_id": "i-vsILeJ8_8",
+            "name": "Star Wars: Teaser Trailer"
+        },
+        {
+            "type": "trailer",
+            "provider": "youtube",
+            "external_id": "vZ734NWnAHA",
+            "name": "Star Wars Episode IV: A New Hope - Trailer"
+        }
+    ],
+    "scoring": [
+        {
+            "provider_type": "tomato:meter",
+            "value": 93
+        },
+        {
+            "provider_type": "tomato:rating",
+            "value": 1
+        }
+    ],
+    "credits": [
+        {
+            "role": "ACTOR",
+            "character_name": "Luke Skywalker",
+            "person_id": 1989,
+            "name": "Mark Hamill"
+        },
+        {
+            "role": "ACTOR",
+            "character_name": "Han Solo",
+            "person_id": 1225,
+            "name": "Harrison Ford"
+        },
+        {
+            "role": "ACTOR",
+            "character_name": "Princess Leia Organa",
+            "person_id": 1990,
+            "name": "Carrie Fisher"
+        }
+    ],
+    "external_ids": [
+        {
+            "provider": "tmdb",
+            "external_id": "11"
+        },
+        {
+            "provider": "imdb",
+            "external_id": "tt0076759"
+        }
+    ],
+    "original_language": "en",
+    "genre_ids": [
+        14,
+        1,
+        7
+    ],
+    "age_certification": "PG",
+    "runtime": 121
+}
