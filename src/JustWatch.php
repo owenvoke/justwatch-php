@@ -34,6 +34,11 @@ final class JustWatch
         return new Genres($this->adapter, $this->locale);
     }
 
+    public function movies(): Movies
+    {
+        return new Movies($this->adapter, $this->locale);
+    }
+
     public function persons(): Persons
     {
         return new Persons($this->adapter, $this->locale);
