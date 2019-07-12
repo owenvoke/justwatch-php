@@ -25,7 +25,7 @@ abstract class AbstractApi
     public function __construct(HttpAdapter $adapter, ?string $locale = null, ?string $endpoint = null)
     {
         $this->adapter = $adapter;
-        $this->locale = $locale ?? static::DEFAULT_LOCALE;
+        $this->locale = $locale ?: static::DEFAULT_LOCALE;
         $this->endpoint = $endpoint ?: static::ENDPOINT;
     }
 }
