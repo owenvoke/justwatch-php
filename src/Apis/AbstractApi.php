@@ -10,6 +10,8 @@ abstract class AbstractApi
 {
     /** @var string */
     public const ENDPOINT = 'https://apis.justwatch.com/content';
+    /** @var string */
+    public const DEFAULT_LOCALE = 'en_US';
 
     /** @var HttpAdapter */
     protected $adapter;
@@ -23,7 +25,7 @@ abstract class AbstractApi
     public function __construct(HttpAdapter $adapter, ?string $locale = null, ?string $endpoint = null)
     {
         $this->adapter = $adapter;
-        $this->locale = $locale ?? 'en_US';
+        $this->locale = $locale ?? static::DEFAULT_LOCALE;
         $this->endpoint = $endpoint ?: static::ENDPOINT;
     }
 }
