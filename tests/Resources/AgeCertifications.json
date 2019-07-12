@@ -1,0 +1,20 @@
+[
+    {
+        "id": 72,
+        "technical_name": "U",
+        "description": "All ages admitted, there is nothing unsuitable for children.",
+        "object_type": "movie",
+        "country": "GB",
+        "order": 1,
+        "organization": "BBFC"
+    },
+    {
+        "id": 73,
+        "technical_name": "PG",
+        "description": "All ages admitted, but certain scenes may be unsuitable for young children. May contain mild language and sex/drugs references. May contain moderate violence if justified by context (e.g. fantasy).",
+        "object_type": "movie",
+        "country": "GB",
+        "order": 2,
+        "organization": "BBFC"
+    }
+]
