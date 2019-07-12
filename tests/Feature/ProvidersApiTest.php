@@ -62,8 +62,8 @@ final class ProvidersApiTest extends TestCase
         $client = new Client(['handler' => $handler]);
 
         $adapter = new HttpAdapter($client);
-        $provider = new Providers($adapter, 'en_US');
-        $provider = $provider->getAll()[1];
+        $providers = new Providers($adapter, 'en_US');
+        $provider = $providers->getAll()[1];
 
         $this->assertInstanceOf(ProviderEntity::class, $provider);
         $this->assertEquals(9, $provider->id);
