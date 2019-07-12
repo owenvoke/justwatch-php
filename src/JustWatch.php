@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace pxgamer\JustWatch;
 
 use pxgamer\JustWatch\Apis\Genres;
+use pxgamer\JustWatch\Apis\Persons;
 use pxgamer\JustWatch\Apis\Providers;
 use pxgamer\JustWatch\Adapters\HttpAdapter;
 use pxgamer\JustWatch\Apis\AgeCertifications;
@@ -31,6 +32,11 @@ final class JustWatch
     public function genres(): Genres
     {
         return new Genres($this->adapter, $this->locale);
+    }
+
+    public function persons(): Persons
+    {
+        return new Persons($this->adapter, $this->locale);
     }
 
     public function providers(): Providers
