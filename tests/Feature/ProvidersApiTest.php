@@ -25,8 +25,8 @@ final class ProvidersApiTest extends TestCase
         $client = new Client(['handler' => $handler]);
 
         $adapter = new HttpAdapter($client);
-        $provider = new Providers($adapter, 'en_US');
-        $allProviders = $provider->getAll();
+        $providers = new Providers($adapter, 'en_US');
+        $allProviders = $providers->getAll();
 
         $this->assertIsArray($allProviders);
         $this->assertCount(2, $allProviders);
@@ -43,13 +43,13 @@ final class ProvidersApiTest extends TestCase
         $client = new Client(['handler' => $handler]);
 
         $adapter = new HttpAdapter($client);
-        $provider = new Providers($adapter, 'en_US');
-        $allProviders = $provider->getAll()[0];
+        $providers = new Providers($adapter, 'en_US');
+        $provider = $providers->getAll()[0];
 
-        $this->assertInstanceOf(ProviderEntity::class, $allProviders);
-        $this->assertEquals(8, $allProviders->id);
-        $this->assertEquals('Netflix', $allProviders->clearName);
-        $this->assertEquals('nfx', $allProviders->shortName);
+        $this->assertInstanceOf(ProviderEntity::class, $provider);
+        $this->assertEquals(8, $provider->id);
+        $this->assertEquals('Netflix', $provider->clearName);
+        $this->assertEquals('nfx', $provider->shortName);
     }
 
     /** @test */
@@ -63,11 +63,11 @@ final class ProvidersApiTest extends TestCase
 
         $adapter = new HttpAdapter($client);
         $provider = new Providers($adapter, 'en_US');
-        $allProviders = $provider->getAll()[1];
+        $provider = $provider->getAll()[1];
 
-        $this->assertInstanceOf(ProviderEntity::class, $allProviders);
-        $this->assertEquals(9, $allProviders->id);
-        $this->assertEquals('Amazon Prime Video', $allProviders->clearName);
-        $this->assertEquals('amp', $allProviders->shortName);
+        $this->assertInstanceOf(ProviderEntity::class, $provider);
+        $this->assertEquals(9, $provider->id);
+        $this->assertEquals('Amazon Prime Video', $provider->clearName);
+        $this->assertEquals('amp', $provider->shortName);
     }
 }
