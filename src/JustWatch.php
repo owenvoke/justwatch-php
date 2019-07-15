@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace pxgamer\JustWatch;
 
+use pxgamer\JustWatch\Apis\Shows;
 use pxgamer\JustWatch\Apis\Genres;
 use pxgamer\JustWatch\Apis\Persons;
 use pxgamer\JustWatch\Apis\Providers;
@@ -47,5 +48,10 @@ final class JustWatch
     public function providers(): Providers
     {
         return new Providers($this->adapter, $this->locale);
+    }
+
+    public function shows(): Shows
+    {
+        return new Shows($this->adapter, $this->locale);
     }
 }
