@@ -1,0 +1,85 @@
+{
+    "id": 1,
+    "title": "Star Wars: The Clone Wars",
+    "full_path": "/us/tv-show/star-wars-the-clone-wars",
+    "full_paths": {
+        "SHOW_DETAIL_OVERVIEW": "/us/tv-show/star-wars-the-clone-wars"
+    },
+    "poster": "/poster/19147561/{profile}",
+    "backdrops": [
+        {
+            "backdrop_url": "/backdrop/8592092/{profile}"
+        }
+    ],
+    "short_description": "Yoda, Obi-Wan Kenobi, Anakin Skywalker, Mace Windu and other Jedi Knights lead the Grand Army of the Republic against the droid army of the Separatists.",
+    "original_release_year": 2008,
+    "tmdb_popularity": 49.372,
+    "object_type": "show",
+    "original_title": "Star Wars: The Clone Wars",
+    "offers": [
+        {
+            "type": "aggregated",
+            "monetization_type": "buy",
+            "provider_id": 2,
+            "retail_price": 134.94,
+            "currency": "USD",
+            "urls": {
+                "standard_web": "https://itunes.apple.com/us/tv-season/star-wars-the-clone-wars-season-6/id864107574?uo=4\u0026at=1000l3V2"
+            },
+            "presentation_type": "sd",
+            "element_count": 6,
+            "new_element_count": 6,
+            "date_provider_id": "2017-02-26_2",
+            "date_created": "2017-02-26"
+        }
+    ],
+    "clips": [
+        {
+            "type": "trailer",
+            "provider": "youtube",
+            "external_id": "Y6WcmKRvHpk",
+            "name": "STAR WARS: The Clone Wars Trailer (2019)"
+        }
+    ],
+    "scoring": [
+        {
+            "provider_type": "imdb:votes",
+            "value": 39869
+        }
+    ],
+    "credits": [
+        {
+            "role": "ACTOR",
+            "character_name": "Obi-Wan Kenobi",
+            "person_id": 18054,
+            "name": "James Arnold Taylor"
+        }
+    ],
+    "external_ids": [
+        {
+            "provider": "tmdb",
+            "external_id": "4194"
+        },
+        {
+            "provider": "imdb",
+            "external_id": "tt0458290"
+        }
+    ],
+    "original_language": "en",
+    "genre_ids": [
+        14,
+        1,
+        2
+    ],
+    "age_certification": "TV-PG",
+    "max_season_number": 6,
+    "seasons": [
+        {
+            "id": 3,
+            "title": "Season 1",
+            "full_path": "/us/tv-show/star-wars-the-clone-wars/season-1",
+            "poster": "/poster/8592028/{profile}",
+            "season_number": 1
+        }
+    ]
+}
