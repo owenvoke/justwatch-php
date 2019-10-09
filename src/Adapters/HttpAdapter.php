@@ -22,7 +22,7 @@ final class HttpAdapter implements BaseAdapter
     protected $response;
     
     /**
-     * Create a new HttpAdaptor instance using the given client
+     * Create a new HttpAdaptor instance.
      *
      * @param string|null $token
      * @param ClientInterface|null $client
