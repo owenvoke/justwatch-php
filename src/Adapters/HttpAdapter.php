@@ -20,7 +20,7 @@ final class HttpAdapter implements BaseAdapter
 
     /** @var Response */
     protected $response;
-    
+
     /**
      * Create a new HttpAdaptor instance.
      *
