@@ -1,0 +1,35 @@
+{
+  "jw_entity_id": "",
+  "id": 1,
+  "title": "The Unknown",
+  "poster": "/poster/8591991/{profile}",
+  "short_description": "\"THE TRUTH ABOUT YOURSELF IS THE HARDEST TO ACCEPT\"\n\nClone trooper Tup succumbs to a mysterious mental illness that results in the shocking death of a Jedi Master. Unable to account for his murderous actions, Tup is sedated and sent back to Kamino for examination. Meanwhile, Admiral Trench of the Separatists informs Count Dooku of the betrayal, and is convinced that the killing stems from something deeper. Anakin Skywalker and ARC Trooper Fives accompany Tup, but their return trip is ambushed by Separatists.",
+  "original_release_year": 2014,
+  "object_type": "show_episode",
+  "offers": [
+    {
+      "type": "standard",
+      "monetization_type": "buy",
+      "provider_id": 7,
+      "retail_price": 2.99,
+      "currency": "USD",
+      "urls": {
+        "standard_web": "http://www.vudu.com/movies/#!content/597572/Star-Wars-The-Clone-Wars-The-Unknown"
+      },
+      "presentation_type": "hd",
+      "date_provider_id": "2016-10-18_7",
+      "date_created": "2016-10-18"
+    }
+  ],
+  "external_ids": [
+    {
+      "provider": "tmdb",
+      "external_id": "4194:6:1"
+    }
+  ],
+  "runtime": 25,
+  "episode_number": 1,
+  "show_id": 1,
+  "show_title": "Star Wars: The Clone Wars",
+  "season_number": 6
+}

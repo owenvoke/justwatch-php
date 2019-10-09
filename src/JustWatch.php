@@ -7,6 +7,7 @@ namespace pxgamer\JustWatch;
 use pxgamer\JustWatch\Apis\Shows;
 use pxgamer\JustWatch\Apis\Genres;
 use pxgamer\JustWatch\Apis\Persons;
+use pxgamer\JustWatch\Apis\Episodes;
 use pxgamer\JustWatch\Apis\Providers;
 use pxgamer\JustWatch\Adapters\HttpAdapter;
 use pxgamer\JustWatch\Apis\AgeCertifications;
@@ -28,6 +29,11 @@ final class JustWatch
     public function ageCertifications(): AgeCertifications
     {
         return new AgeCertifications($this->adapter, $this->locale);
+    }
+
+    public function episodes(): Episodes
+    {
+        return new Episodes($this->adapter, $this->locale);
     }
 
     public function genres(): Genres
