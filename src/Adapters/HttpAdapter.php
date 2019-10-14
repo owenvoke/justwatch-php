@@ -11,8 +11,9 @@ use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
 use pxgamer\JustWatch\Exceptions\HttpException;
+use pxgamer\HttpAdapters\HttpAdapter as BaseAdapter;
 
-final class HttpAdapter
+final class HttpAdapter implements BaseAdapter
 {
     /** @var ClientInterface */
     protected $client;
@@ -20,12 +21,20 @@ final class HttpAdapter
     /** @var Response */
     protected $response;
 
+    /**
+     * Create a new HttpAdaptor instance.
+     *
+     * @param string|null $token
+     * @param ClientInterface|null $client
+     */
     public function __construct(?ClientInterface $client = null)
     {
         $this->client = $client ?: new Client();
     }
 
     /**
+     * Perform a GET request to the given URL.
+     *
      * @param string $url
      * @return string
      */
@@ -42,6 +51,8 @@ final class HttpAdapter
     }
 
     /**
+     * Perform a DELETE request to the given URL.
+     *
      * @param string $url
      * @return string
      */
@@ -58,8 +69,10 @@ final class HttpAdapter
     }
 
     /**
-     * @param string       $url
-     * @param array|string $content
+     * Perform a PUT request to the given URL.
+     *
+     * @param string            $url
+     * @param array|string|null $content
      * @return string
      * @throws HttpException
      */
@@ -67,7 +80,7 @@ final class HttpAdapter
     {
         $options = [];
 
-        $options[is_array($content) ? 'json' : 'body'] = $content;
+        $options[is_array($content) ? 'json' : 'body'] = $content ?? '';
 
         try {
             $this->response = $this->client->put($url, $options);
@@ -80,8 +93,10 @@ final class HttpAdapter
     }
 
     /**
-     * @param string       $url
-     * @param array|string $content
+     * Perform a POST request to the given URL.
+     *
+     * @param string            $url
+     * @param array|string|null $content
      * @return string
      * @throws HttpException
      */
@@ -89,7 +104,7 @@ final class HttpAdapter
     {
         $options = [];
 
-        $options[is_array($content) ? 'json' : 'body'] = $content;
+        $options[is_array($content) ? 'json' : 'body'] = $content ?? '';
 
         try {
             $this->response = $this->client->post($url, $options);
@@ -101,6 +116,11 @@ final class HttpAdapter
         return (string) $this->response->getBody();
     }
 
+    /**
+     * Get the headers from the last response.
+     *
+     * @return array|null
+     */
     public function getLatestResponseHeaders(): ?array
     {
         if (null === $this->response) {
@@ -114,7 +134,12 @@ final class HttpAdapter
         ];
     }
 
-    /** @throws HttpException */
+    /**
+     * Handle a request exception.
+     *
+     * @return void
+     * @throws HttpException
+     */
     protected function handleError(): void
     {
         $body = (string) $this->response->getBody();
