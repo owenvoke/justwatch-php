@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace pxgamer\JustWatch\Tests\Feature;
 
-use stdClass;
 use GuzzleHttp\Client;
+use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
-use pxgamer\JustWatch\Apis\Shows;
-use GuzzleHttp\Handler\MockHandler;
 use pxgamer\JustWatch\Adapters\HttpAdapter;
+use pxgamer\JustWatch\Apis\Shows;
 use pxgamer\JustWatch\Entities\Show as ShowEntity;
+use stdClass;
 
 final class ShowsApiTest extends TestCase
 {

@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace pxgamer\JustWatch\Tests\Feature;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
-use GuzzleHttp\Handler\MockHandler;
 use pxgamer\JustWatch\Adapters\HttpAdapter;
 use pxgamer\JustWatch\Apis\AgeCertifications;
 use pxgamer\JustWatch\Entities\AgeCertification as AgeCertificationEntity;
