@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace pxgamer\JustWatch\Adapters;
 
-use function is_array;
 use GuzzleHttp\Client;
-use function json_decode;
-use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
-use pxgamer\JustWatch\Exceptions\HttpException;
+use GuzzleHttp\Psr7\Response;
+use function is_array;
+use function json_decode;
 use pxgamer\HttpAdapters\HttpAdapter as BaseAdapter;
+use pxgamer\JustWatch\Exceptions\HttpException;
 
 final class HttpAdapter implements BaseAdapter
 {

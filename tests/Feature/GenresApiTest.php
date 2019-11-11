@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace pxgamer\JustWatch\Tests\Feature;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
-use pxgamer\JustWatch\Apis\Genres;
-use GuzzleHttp\Handler\MockHandler;
 use pxgamer\JustWatch\Adapters\HttpAdapter;
+use pxgamer\JustWatch\Apis\Genres;
 use pxgamer\JustWatch\Entities\Genre as GenreEntity;
 
 final class GenresApiTest extends TestCase

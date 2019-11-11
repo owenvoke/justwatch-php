@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace pxgamer\JustWatch\Tests\Feature;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
-use GuzzleHttp\Handler\MockHandler;
-use pxgamer\JustWatch\Apis\Persons;
 use pxgamer\JustWatch\Adapters\HttpAdapter;
+use pxgamer\JustWatch\Apis\Persons;
 use pxgamer\JustWatch\Entities\Person as PersonEntity;
 
 final class PersonsApiTest extends TestCase

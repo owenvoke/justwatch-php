@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace pxgamer\JustWatch;
 
-use pxgamer\JustWatch\Apis\Shows;
-use pxgamer\JustWatch\Apis\Genres;
-use pxgamer\JustWatch\Apis\Persons;
-use pxgamer\JustWatch\Apis\Episodes;
-use pxgamer\JustWatch\Apis\Providers;
 use pxgamer\JustWatch\Adapters\HttpAdapter;
 use pxgamer\JustWatch\Apis\AgeCertifications;
+use pxgamer\JustWatch\Apis\Episodes;
+use pxgamer\JustWatch\Apis\Genres;
+use pxgamer\JustWatch\Apis\Persons;
+use pxgamer\JustWatch\Apis\Providers;
+use pxgamer\JustWatch\Apis\Shows;
 
 final class JustWatch
 {
